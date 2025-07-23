@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA - Luxury Redefined</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> </head>
+<body>
+
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-modal">
+            <span class="close-btn" id="close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <span class="close-btn" id="close-cart">&times;</span>
+            <h2>Your Shopping Bag</h2>
+            <div id="cart-items">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">₹0.00</span></p>
+            </div>
+            <button class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+    <header class="main-header">
+        <nav>
+            <div class="logo">AURA</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#watches">Watches</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="login-btn">Login</a>
+                <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Timeless Elegance</h1>
+                <p>Discover our exclusive collection of luxury goods, crafted for the discerning individual.</p>
+                <a href="#watches" class="btn">Explore Collection</a>
+            </div>
+        </section>
+
+        <section id="watches" class="product-section">
+            <h2>Luxury Watches</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Jacob & Co. Astronomia Manual Winding Men watch in Round case & Skeleton Dia" data-price="35800000">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSgTcHgp13iXjiE6TMyHnMs7XO3KKGbeYVtfgoFHddGAhMABYqUgayOh9u2AE9CLQTRRZXtLUpuX7JfugAtPrMl6kxTYJilZ21lNzhSo74" alt="Luxury Watch 1">
+                    <h3>Jacob & Co. Astronomia Manual Winding Men watch in Round case & Skeleton Dial</h3>
+                    <p>₹3,58,00,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Girard-Perregaux Bridges Automatic Men's Watch" data-price="36570000">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcStGvLdLFSyXmyRBSHT672Qr_T_2Fqq1EJxIKT6Bt9y96EYtWlHTwFcirhIFi3pbPryfgS9vB64eck0GJquyzhsylWvPCUBbfQeLYiqBzZAJtE1uQM5EqIywQ" alt="Luxury Watch 2">
+                    <h3>Girard-Perregaux Bridges Automatic Men's Watch</h3>
+                    <p>₹3,65,70,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Sunrise Double Tourbillon" data-price="38594000">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQqtfSzVvPbDdVx1lYhyQTYuhSVnu0MS25nrpLPuIfJ1APm5UzdXcTs79I-16nuHdV8E-wDjX8Bvlkx6n24gyQBQSXeRxwfl5HgNM2PvRAof44Ej9wfVyqJcQ" alt="Luxury Watch 3">
+                    <h3>Sunrise Double Tourbillon</h3>
+                    <p>₹3,85,94,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Audemars Piguet Jules Audemars Tourbillon Grande Date 18k Rose Gold" data-price="10780456.28">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSOzdDEr6UqKwjGOfderRFeDmB7ZpoxMcGfTC_EXZtM_1CF03rb4W6LHKBs7x0GvjDko8dKyQ7R016J06ayMo5uctY7dXQS95IQ1JJHps9Vw5g9Wg_KOzyv8tU" alt="Luxury Watch 4">
+                    <h3>Audemars Piguet Jules Audemars Tourbillon Grande Date 18k Rose Gold</h3>
+                    <p>₹1,07,80,456.28</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Jacob & Co. Bugatti Chiron Tourbillon Manual Winding Men watch in Rectangular case & Skeleton Dial" data-price="41600000">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSae8vver1zC2F31YI-gm9xBf2duD-fbEiWFZxAxZbJhrKXHvuKdh3wtnF05ShaUbr6eYDyiUhUVYC_LElPoP5GS29Q2NbTjMBIQyprafg" alt="Luxury Watch 5">
+                    <h3>Jacob & Co. Bugatti Chiron Tourbillon Manual Winding Men watch in Rectangular case & Skeleton Dial</h3>
+                    <p>₹4,16,00,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Audemars Piguet Royal Oak Offshore Tourbillon Chronograph Watch" data-price="34487728.15">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRToeMFfrz0IL9haTGRa2oNtvx1iGF6qCigFdej1pXSg1wOSk0sPpqNtLphf9pq6ocYtw2FXg_paCqJSuAs3HFo8MNE_QQp" alt="Luxury Watch 6">
+                    <h3>Audemars Piguet Royal Oak Offshore Tourbillon Chronograph Watch</h3>
+                    <p>₹3,44,87,728.15</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Graham Moon Men's Flying-Tourbillon Watch" data-price="8543536.90">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRe_nY_z-ybQZGnMTdE8MmPFlpAbsPFRyl_tror4KMDoslzq8GxaTXvAkdGbJXpZxOpPNVxgTwqxSnBamhbl9NJJFOMj6sQTqWqtG0-lVQvIcuQC-yzphlI5Q" alt="Luxury Watch 7">
+                    <h3>Graham Moon Men's Flying-Tourbillon Watch</h3>
+                    <p>₹85,43,536.90</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Audemars Piguet Royal Oak Perpetual Calendar" data-price="9974774.60">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRPLkQ5PSsyNMuVPQatRf39bK5uaqsxmtr1NcK5Q2ZQy3P_o_ImGyzSLcTXN5IJPCOmh_Is58lHC2gEScPoamE823Fx5-szcVev_PzPA5EwYedy7wUK_anpdA" alt="Luxury Watch 8">
+                    <h3>Audemars Piguet Royal Oak Perpetual Calendar</h3>
+                    <p>₹99,74,774.60</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="BVLGARI Octo Manual Winding Men watch in Octagon case & Skeleton Dial" data-price="23980000">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR2tb8_HJb8R2LOgRb8k24x3-A-tQkE_HtiT3Thy5rk1zC2oCoRSlnizslAPTkz71KJnV68klBKzBpXgIHW5uUoe-JoFgWkaxu3gJghw_c" alt="Luxury Watch 9">
+                    <h3>BVLGARI Octo Manual Winding Men watch in Octagon case & Skeleton Dial</h3>
+                    <p>₹2,39,80,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Jacob & Co. Bugatti Chiron Tourbillon Manual Winding Men watch in Rectangular case & Skeleton Dial" data-price="42100000">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS9IM9RQyGquExeH8MNzZvkBOZhrHdnvDE_CnZC3kwQWz4TnxQoUV_LkAsUP-zDIiD4xH970TX-JoGsctgfS1qxoPvK7v70Q5e2aaZ7sV4ExvpoDZfR87Vihw" alt="Luxury Watch 10">
+                    <h3>Jacob & Co. Bugatti Chiron Tourbillon Manual Winding Men watch in Rectangular case & Skeleton Dial</h3>
+                    <p>₹4,21,00,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Jacob & Co. Epic X Manual Winding Men watch in Round case & Skeleton Dial" data-price="34900000">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTUUCsscSpbvf0jL16S-B8AA7I_qAFc5RwwqjloDZLuLUcCWipzjYqdkVAf1uzrCHdlm1df11GNBUBBppdpUXd9yTZnjG8cDe5rE-IKhLz0nIN2v3BVO21Z" alt="Luxury Watch 11">
+                    <h3>Jacob & Co. Epic X Manual Winding Men watch in Round case & Skeleton Dial</h3>
+                    <p>₹3,49,00,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Orbis In Machina Central Monotourbillon" data-price="22649500">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSBUpBOJTprxXbYrPSl3Wun8CVyxPBg_KFmElFmbm-CmYADcJA_Az--HQGdpRC-U7Zd3XMag__ITa675KJmjrHaNgFHe_uhUf77XXXJctmgAOF7ipp1uzFb9Q" alt="Luxury Watch 12">
+                    <h3>Orbis In Machina Central Monotourbillon</h3>
+                    <p>₹2,26,49,500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+             <h2>Get In Touch</h2>
+             <p>For inquiries or private viewings, please contact our concierge.</p>
+             <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+             </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AURA. All Rights Reserved. | A Symbol of Luxury.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
